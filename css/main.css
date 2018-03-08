@@ -1,22 +1,32 @@
 html {
   height: 100%;
   background-color: #dddddd;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body{
   min-height: 100%;
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  padding-bottom: 8rem;
 }
 
 h1 {
   font-family: Arboria, Helvetica, sans-serif;
   color: #242424;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   letter-spacing: 0.1em;
   margin-top: 4rem;
   position: relative;
+    font-style: italic;
 
 }
 
@@ -64,7 +74,6 @@ p{
 }
 
 a{
-  color: #3b3b3b;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -76,6 +85,7 @@ a:hover, a:visited, a:focus, a:active{
 img {
   max-width: 40rem;
   height: auto;
+  border: 2px solid #ccc1a3;
 }
 
 /* index page */
@@ -87,6 +97,7 @@ img {
   margin-top: 20rem;
   text-align: left;
   font-size: 3rem;
+  font-style: normal;
 
 }
 #index-andersen:after{
@@ -128,4 +139,57 @@ img {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 #bbbbbb, 0 6px 20px 0 #bbbbbb;
+}
+
+.project-name{
+  border: 1px solid #ccc1a3;
+  min-height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #ccc1a3;
+  font-weight: bold;
+  text-decoration-color:  #ccc1a3;
+}
+
+.project-name a{
+  padding: 1rem;
+  color: #ccc1a3;
+}
+
+.project-name a:visited{
+  color: #ccc1a3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile-icons{
+  margin: auto;
+  width: 50%;
+}
+
+.profile-icons a{
+  padding-left: 1rem;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+
+.circle{
+  width: 5rem;
+	height: 5rem;
+	border: 1px solid #ccc1a3;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  display: inline-block;
+  margin: auto;
+}
+
+
+/* Project pages*/
+
+.roles-container p{
+  margin: 0.5rem 0;
 }
