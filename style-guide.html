@@ -9,68 +9,151 @@
   <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/header.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>Style Guide | Andersen Li</title>
 </head>
 
 <body>
 	<!-- Header -->
-	<section class="header-container">
-		<div class = "block index-nav">
-      <nav>
-        <a href = "index.html">Andersen Li</a>
-      </nav>
-    </div>
-    <div class="block main-nav">
-      <nav>
-				<a href = "index.html">PROJECTS</a>
-				<a href = "Contact.html">CONTACT</a>
-      </nav>
-		</div>
-		</div>
-	</div>
+	<section class="section-header max-width-700">
+    <div class="container">
+  		<div class = "block index-nav">
+        <nav>
+          <a href = "index.html">A [icon]</a>
+        </nav>
+      </div>
+  	</div>
+	</section>
 
 	<!-- Main content	-->
 
-  <div class="container">
-    <div class="block">
-      <h1>HEADER 1</h1>
+  <section class="max-width-700">
+    <section>
 
-      <h2>HEADER 2</h2>
-
-      <h3>HEADER 3</h3>
-    </div>
-
-    <div class="block">
-      <p>Example text</p>
-
-      <ul>
-        <li>list item 1</li>
-        <li>list item 2</li>
-        <li>list item 3</li>
-      </ul>
-
-      <ol>
-        <li>list item 1</li>
-        <li>list item 2</li>
-        <li>list item 3</li>
-      </ol>
-    </div>
-  </div>
-
-  <section class="portfolio-container">
-      <div class="container width-40">
-        <div class="block project-block">
-          <figure>
-            <img src="img/conextus_thumbnail.jpg" alt="" />
-          </figure>
-          <h3>Project Name</h3>
+      <h1 id="index-andersen" class="margin-none">Andersen Li</h1>
+        <div class="css-selector-code">
+          <p><strong>CSS Selector:</strong> h1, #index-andersen</p>
+          <code>&lt;h1 id=&quot;index-andersen&quot;&gt;Andersen Li&lt;/h1&gt;</code>
         </div>
+
+        <p id="index-title">web and user experience designer</p>
+
+      <h1>HEADER 1: Section Titles</h1>
+        <div class="css-selector-code">
+          <p><strong>CSS Selector:</strong> h1</p>
+          <code>&lt;h1&gt;HEADER 1: Section Titles&lt;/h1&gt;</code>
+        </div>
+      <h2>HEADER 2: Subheaders</h2>
+        <div class="css-selector-code">
+          <p><strong>CSS Selector:</strong> h2</p>
+          <code>&lt;h2&gt;HEADER 2: Subheaders&lt;/h2&gt;</code>
+        </div>
+      <h3>HEADER 3: Subtitles</h3>
+        <div class="css-selector-code">
+          <p><strong>CSS Selector:</strong> h1</p>
+          <code>&lt;h2&gt;HEADER 3: Subtitles&lt;/h2&gt;</code>
+        </div>
+    </section>
+
+    <section>
+      <h3>Grid Layout</h3>
+      <div class="container">
+        <div class="block">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="block">
+        </div>
+        <div class="block">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="block">
+        </div>
+        <div class="block">
+        </div>
+        <div class="block">
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-700">
+      <h2>Images</h2>
+        <div class="container portfolio-container">
+          <div class="block project-block width-50">
+            <figure>
+              <img src="img/conextus_thumbnail.jpg" alt="" />
+            </figure>
+          </div>
+
+          <div class="block project-block width-50">
+            <figure>
+              <img src="img/381icon.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="css-selector-code">
+            <p><strong>CSS Selector:</strong> img</p>
+            <code>&lt;src="img/conextus_thumbnail.jpg"/&gt;</code>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="block width-50">
+            <nav><a class="project-name">Project Link button</a></nav>
+          </div>
+
+          <div class="block width-50">
+            <div class="css-selector-code">
+              <p class="margin-top-none"><strong>CSS Selector:</strong>a, .project-name</p>
+              <code>&lt;nav&gt;&lt;a href=&quot;&nbsp;&quot;&gt;Project Link button&lt;/a&gt;&lt;/nav&gt;</code>
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+  <section class="max-width-700">
+      <h2>Icons</h2>
+      <div class="container">
+
+        <div class="block">
+          <p></p>
+
+          <div class="profile-icons">
+              <div class="circle">
+                <a href="mailto:ala111@sfu.ca">email</a>
+              </div>
+              <div class="circle">
+                <a href="">CV</a>
+              </div>
+              <div class="circle">
+                <a href="">Git</a>
+              </div>
+              <div class="circle">
+                <a href="">in</a>
+              </div>
+          </div>
+
+          <div class="css-selector-code">
+            <p class="margin-top-none"><strong>CSS Selector:</strong>div, .circle</p>
+            <code>&lt;div class&quot;circle&quot;&gt;
+              <br>&lt;a href=&quot;mailto:ala111@sfu.ca &quot;&gt;Mail&lt;/a&gt;
+              <br>&lt;/a&gt;</code>
+          </div>
+        </div>
+    </div>
   </section>
 
 	<!-- Footer -->
 
+  <section class="footer-container">
+      <a href="">Style Guide</a>
+      <a href="">References</a>
 
+  </section>
 
 </body>
 

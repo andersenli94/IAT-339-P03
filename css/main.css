@@ -60,26 +60,38 @@ h3{
   color: #3b3b3b;
   font-weight: medium;
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1em;
-  margin-top: 1rem;
+  margin-top: 2rem;
   position: relative;
+  font-style: italic;
+}
+
+button{
+
 }
 
 p{
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a{
   font-size: 1.1rem;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a:hover, a:visited, a:focus, a:active{
-  color: #3b3b3b;
+  /* color: #3b3b3b; */
+}
+
+code{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 img {
@@ -142,24 +154,29 @@ img {
 }
 
 .project-name{
-  border: 1px solid #ccc1a3;
+  border: 1px solid #D4AF37;
   min-height: 4rem;
   text-align: center;
   line-height: 4rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  color: #ccc1a3;
+  font-size: 1.1rem;
+  color: #D4AF37  ;
   font-weight: bold;
   text-decoration-color:  #ccc1a3;
 }
 
-.project-name a{
-  padding: 1rem;
-  color: #ccc1a3;
+.project-name{
+  padding: 1rem 0.8rem;
+  color: #D4AF37;
+}
+
+#project-button-container{
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-name a:visited{
-  color: #ccc1a3;
+  color: #D4AF37;
   font-weight: bold;
   text-decoration: none;
 }
@@ -192,4 +209,38 @@ img {
 
 .roles-container p{
   margin: 0.5rem 0;
+}
+
+#roundapoc-icon-container div, #roundapoc-label-container div{
+  display: inline-block;
+}
+
+.caption{
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+
+
+
+/* Style guide page */
+
+.css-selector-code{
+    background-color: #fff;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0;
+
+}
+.css-selector-code p {
+  letter-spacing: 0.1rem;
+}
+
+.project-name:hover{
+  background-color: #D4AF37;
+  color: white;
+}
+
+.project-name a:hover{
+  color: white;
 }
