@@ -114,3 +114,20 @@
 .margin-top-none{
   margin-top: 0!important;
 }
+
+.margin-bot-none{
+  margin-top: 0!important;
+}
+
+.margin-left-none{
+  margin-left: 0!important;
+}
+
+.margin-right-none{
+  margin-right: 0!important;
+}
+
+.clearfix{
+  content:'';
+  clear: both;
+}

@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/header.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Style Guide | Andersen Li</title>
+	<title>The Portfolio of Andersen Li</title>
 </head>
 
 <body>
 	<!-- Header -->
-	<section class="section-header max-width-700">
-    <div class="container">
+	<section class="section-header" id="index-header">
+    <div class="container max-width-700 margin-top-none margin-bottom-none">
   		<div class = "block index-nav">
         <nav>
           <a href = "index.html">A [icon]</a>
@@ -27,38 +27,55 @@
 
 	<!-- Main content	-->
 
-  <section class="landing-container max-width-700">
-    <h1 id="index-andersen">Andersen Li</h1>
-
-      <p id="index-title">web and user experience designer</p>
+  <section class="landing-container">
+    <div class="andersen-container">
+      <h1 id="index-andersen">ANDERSEN LI</h1>
+      <p id="index-title">web and front end developer</p>
+    </div>
+    <span id="scroll-indicator-line"></span>
+    <span class="vertical-line"></span>
+    <p id="scroll-indicator-text">scroll</p>
   </section>
 
   <section class="portfolio-container width-100">
-    <div class="max-width-700">
-    <h1>PORTFOLIO</h1>
-      <div class="container">
-        <div class="block project-block width-50">
-          <figure>
-            <img src="img/conextus_thumbnail.jpg" alt="" />
+    <div class="index-h1-container">
+    <h1>Portfolio <span class="horizontal-line"></span></h1>
+      <div class="container max-width-700 project-container">
+        <div class="block-3 project-block">
+          <figure class="project-thumbnail">
+            <img src="img/conextus_thumbnail.jpg" alt=""/>
           </figure>
-          <div id="project-button-container">
-          <nav><a href="Conextus.html" class="project-name">Conextus Web Redesign </a></nav>
         </div>
+        <div class="block-2 project-descrpt-container">
+          <h2>Contextus Web Redesign</h2>
+            <p>description</p>
+            <div class="project-nav-button">
+              <a href="round-apocalypse.html" class="project-name">View Project</a>
+            </div>
         </div>
+      </div>
 
-        <div class="block project-block width-50">
-          <figure>
-            <img src="img/381icon.png" alt="" />
+      <div class="project-line-container clearfix"><span class="vertical-line" id="project-line"></span></div>
+
+      <div class="container max-width-700 project-container">
+        <div class="block-2 project-descrpt-container margin-left-none">
+          <h2>Round Apocalypse Mobile Game</h2>
+            <p>description asdfasdfasd asdfasfas afasf asdfasfasdf asf asfasf asf sfas</p>
+            <div class="project-nav-button">
+              <a href="round-apocalypse.html" class="project-name">View Project</a>
+            </div>
+        </div>
+        <div class="block-3 project-block">
+          <figure class="project-thumbnail">
+            <img src="img/381icon.png" alt=""/>
           </figure>
-          <nav><a href="round-apocalypse.html" class="project-name">Round Apocalypse Mobile Game</a></nav>
-
         </div>
       </div>
     </div>
   </section>
 
   <section class="profile-container max-width-700">
-      <h1>PROFILE</h1>
+      <h1>Profile<span class="horizontal-line"></span></h1>
       <div class="container">
 
         <div class="block">
