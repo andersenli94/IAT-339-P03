@@ -4,133 +4,126 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="css/main.css" type="text/css" />
   <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
   <link rel="stylesheet" href="css/header.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>Round Apocalypse | Andersen Li</title>
 </head>
 
 <body>
 	<!-- Header -->
-  <section class="section-header max-width-700">
-    <div class="container">
-  		<div class = "block index-nav">
-        <nav>
-          <a href = "index.html">A [icon]</a>
-        </nav>
-      </div>
-  	</div>
-	</section>
+
+
+  <!-- Side nav -->
+
+  <section>
+    <nav class="left-nav">
+        <a href="" id="left-nav-head">Andersen Li</a>
+        <a href="" class="left-nav-project">Round Apocalypse</a>
+        <a href="" class="left-nav-project">Conextus</a>
+        <a href="" id="left-nav-foot">Contact</a>
+        <a href="">CV</a>
+    </nav>
+
+  </section>
 
 	<!-- Main content	-->
-  <section class="max-width-700">
-  	<div class = "container">
-  		<div class = "block">
-  			<figure class = "image-container">
-  				<!-- <img src="img/Conextus/conextus_thumbnail-01.jpg" alt="project thumbnail"/> -->
-        </figure>
-  			<div class = "">
-          <h1>OVERVIEW</h1>
+  <div class="project-content">
+    <section class="max-width-650 margin-left-none">
+    	<div class = "container">
+    		<div class = "block">
+    			<figure class = "image-container">
+    				<!-- <img src="img/Conextus/conextus_thumbnail-01.jpg" alt="project thumbnail"/> -->
+          </figure>
+
+          <h1>Overview</h1>
 							<p>Round Apocalypse is a top down scrolling shooter game created using Android Studio. The player travels in space in search for a habital
 								planet while being hunted by their predators. The game utilizes the device's sensors for interactive gameplay
 								keeps high scores using a SQLite database. I created the interface for Round Apocalypse and coded the functionality of the program.</p>
-  			</div>
-        <div class = "roles-container">
-          <p><strong>ROLE:</strong> Mobile app developer, UX/UI Designer, documentation</p>
-					<p><strong>TOOLS:</strong> Android Studio (Java, XML), Adobe Illustrator</p>
-					<p><strong>YEAR:</strong> 2016</p>
+
+          <div class="roles-container">
+            <p><strong>Role:</strong> Mobile app developer, UX/UI Designer, documentation</p>
+  					<p><strong>Tools:</strong> Android Studio (Java, XML), Adobe Illustrator</p>
+  					<p><strong>Year:</strong> 2016</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="max-width-700">
-  	<div class = "container">
-  		<div class = "block">
+        <h1>Design and Process</h1>
 
-      <h1>DESIGN AND PROCESS</h1>
+          <h2>Initial Idea</h2>
+          <p>We created a game for this mobile application that utilizes a phone's hardware
+            and software systems. We then decided to go with a top down scrolling shooter game,
+          where a player is travelling through a map and destroying enemies along the way.
+          The goal of this project is to develop a game with entertainment value that can help
+          improve a player's reflexes and hand eye coordination. </p>
 
-        <h2>Initial Idea</h2>
-        <p>We created a game for this mobile application that utilizes a phone's hardware
-          and software systems. We then decided to go with a top down scrolling shooter game,
-        where a player is travelling through a map and destroying enemies along the way.
-        The goal of this project is to develop a game with entertainment value that can help
-        improve a player's reflexes and hand eye coordination. </p>
+          <h2>First Prototype</h2>
+  					<p>This game interface wireframe is used during development of the project. By using minimalistic objects I can visually focus on parts of the game that I am working on.
+  					Making sure the functionality of the code is working and debugged properly allows for less complications if I run into an error later. </p>
 
-        <h2>First Prototype</h2>
-					<p>This game interface wireframe is used during development of the project. By using minimalistic objects I can visually focus on parts of the game that I am working on.
-					Making sure the functionality of the code is working and debugged properly allows for less complications if I run into an error later. </p>
+            <figure class="margin-none">
+              <img src="img/RoundApoc/wireframe-01.png" alt="wireframes" class="border-none img-responsive"/>
 
-          <figure>
-            <img src="img/RoundApoc/wireframe-01.png" alt="wireframes" class="border-none"/>
+            </figure>
 
-          </figure>
+            <div class="container">
+    					<div class="block"><p class="caption width-80">Left: Introduction screen used to launch the game.</p></div>
+    					<div class="block"><p class="caption width-90 margin-center-horizontal">Middle: Basic game system with a playable character (green),
+                  and enemies (red) that shoot projectiles.</p></div>
+    					<div class="block"><p class="caption width-80 round-apoc-right-caption">Right: Power ups are being integrated.</p></div>
+    				</div>
 
-          <div>
-  					<p>Left: Introduction screen used to launch the game.</p>
-  					<p>Middle: Basic game system with a playable character (green), and enemies (red) that shoot projectiles.</p>
-  					<p>Right: Power ups are being integrated.
-  				</div>
+          <h2>An Interactive Experience</h2>
+  						<p>We felt that interactivity is important to create an enjoyable gaming experience. I integrated the use of the phone's sensors for the commands of the player's character.
+  						For example, tilting the phone to the left and right side moves the player to the corresponding location. Tapping the phone unleashes a powerful attack and shaking the phone
+  						grants the player protection with a shield. The purpose of this is to allow players to perform different actions while playing, thus making a dynamic gameplay experience.  </p>
 
-        <h2>AN INTERACTIVE EXPERIENCE</h2>
-						<p>We felt that interactivity is important to create an enjoyable gaming experience. I integrated the use of the phone's sensors for the commands of the player's character.
-						For example, tilting the phone to the left and right side moves the player to the corresponding location. Tapping the phone unleashes a powerful attack and shaking the phone
-						grants the player protection with a shield. The purpose of this is to allow players to perform different actions while playing, thus making a dynamic gameplay experience.  </p>
-
-						<div class="width-100" id="roundapoc-icon-container">
-							<div class="width-30">
-								<div class="IEIconWrapper">
-									<img src="img/RoundApoc/phoneTap-02.png" alt="" class="border-none"/>
-								</div>
-							</div>
-							<div class="width-30">
-								<div class="IEIconWrapper">
-									<img src="img/RoundApoc/phoneShake-02.png" alt ="" class="border-none"/>
-								</div>
-							</div>
-							<div class="width-30">
-								<div class="IEIconWrapper">
-									<img src="img/RoundApoc/phoneTilt-01.png" alt="" class="border-none"/>
-								</div>
-							</div>
-						</div>
-
-            <div class = "width-100" id="roundapoc-label-container">
-  						<div class = "width-30">
-  							<p class = "IEIconDescription">Tap for Empowered Attacks</p>
+  						<div class="container">
+  							<div class="block">
+  								<figure class="margin-none round-apoc-icon-container">
+  									<img src="img/RoundApoc/phoneTap-02.png" alt="" class="border-none round-apoc-icon"/>
+                    <p class="caption text-center">Tap for Empowered Attacks</p>
+  								</figure>
+  							</div>
+  							<div class="block">
+  								<figure class="margin-none round-apoc-icon-container">
+  									<img src="img/RoundApoc/phoneShake-02.png" alt ="" class="border-none round-apoc-icon"/>
+                    <p class="caption text-center">Shake for Projectile Shield</p>
+  								</figure>
+  							</div>
+  							<div class="block">
+  								<figure class="margin-none round-apoc-icon-container">
+  									<img src="img/RoundApoc/phoneTilt-01.png" alt="" class="border-none round-apoc-icon"/>
+                    <p class="caption text-center">Tilt for Movement</p>
+  								</figure>
+  							</div>
   						</div>
-  						<div class = "width-30">
-  							<p class = "IEIconDescription">Shake for Projectile Shield</p>
-  						</div>
-  						<div class = "width-30">
-  							<p class = "IEIconDescription">Tilt for Movement</p>
-  						</div>
-  					</div>
 
+  				<h2>Visual Overhaul</h2>
+    				  <p>After the program can run functionally, we designed characters and icons
+              for the game's aesthetics. The app features heart icon for lives, wide-shot
+              attack and shield power ups, and as well as an infinite scrolling background.</p>
 
-				<h2>VISUAL OVERHAUL</h2>
-  				  <p>After the program can run functionally, we designed characters and icons
-            for the game's aesthetics. The app features heart icon for lives, wide-shot
-            attack and shield power ups, and as well as an infinite scrolling background.</p>
+    					<figure class="margin-none">
+    						<img src="img/RoundApoc/gameplay-01.png" alt="gameplay screenshot" class="border-none img-responsive"/>
+    					</figure>
 
-  					<figure>
-  						<img src="img/RoundApoc/gameplay-01.png" alt="gameplay screenshot" class="border-none"/>
-  					</figure>
+    					<div class = "caption-container container">
+    						<div class="block"><p class="caption round-apoc-visual-caption">Left: Location of the icons used in the game and what they represent.</p></div>
+    						<div class="block"><p class="caption round-apoc-visual-caption round-apoc-right-caption">Right: Indicator to show where the user is visually focused on during gameplay.</p></div>
+    					</div>
 
-  					<div class = "caption-container">
-  						<p class="caption">Left: Location of the icons used in the game and what they represent.</p>
-  						<p class="caption">Right: Indicator to show where the user is visually focused on during gameplay.</p>
-  					</div>
-
-				<h2>MAKING DESIGN CHOICES</h2>
-  					<p>One of the major choices I made in designing the UI was where to put the icons for lives, power ups, and the score. I decided that lives and power ups were more important than the score,
-  					and chose the corners of the screen to place the information because it is visually easy to locate. The icons for lives and power ups are in the bottom left and right corners, respectively.
-  					This is because the player character remains on near the bottom of the screen, and the user can quickly glance side to side to visualize the UI and determine how many lives or power ups
-  					they have remaining.</p>
-  </section>
-
+  				<h2>Making Design Choices</h2>
+    					<p>One of the major choices I made in designing the UI was where to put the icons for lives, power ups, and the score. I decided that lives and power ups were more important than the score,
+    					and chose the corners of the screen to place the information because it is visually easy to locate. The icons for lives and power ups are in the bottom left and right corners, respectively.
+    					This is because the player character remains on near the bottom of the screen, and the user can quickly glance side to side to visualize the UI and determine how many lives or power ups
+    					they have remaining.</p>
+    </section>
+  </div>
   <!-- Footer -->
 
   <section class="footer-container">

@@ -103,6 +103,11 @@
   margin-right: auto;
 }
 
+.max-width-650{
+  max-width: 650px;
+
+}
+
 .border-none{
   border: none;
 }
@@ -125,6 +130,15 @@
 
 .margin-right-none{
   margin-right: 0!important;
+}
+
+.margin-center-horizontal{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .clearfix{

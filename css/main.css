@@ -37,7 +37,7 @@ h2{
   font-size: 1.5rem;
   text-align: left;
   letter-spacing: 0.05em;
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -60,13 +60,14 @@ button{
 p{
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5rem;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02rem;
 }
 
 a{
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
@@ -84,6 +85,10 @@ img {
   max-width: 40rem;
   height: auto;
   border: 2px solid #ccc1a3;
+}
+
+.img-responsive{
+  max-width: 100%;
 }
 
 /* index page */
@@ -158,7 +163,7 @@ img {
   color: #222222;
 }
 
-.index-h1-container{
+.index-h1-container, #profile-h1{
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -167,6 +172,7 @@ img {
 .index-h1-container h1{
   margin-bottom: 7rem;
 }
+
 .project-block{
 
 
@@ -269,7 +275,7 @@ img {
 .circle{
   width: 5rem;
 	height: 5rem;
-	border: 1px solid #ccc1a3;
+	border: 1px solid #D4AF37;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
@@ -279,6 +285,10 @@ img {
 
 
 /* Project pages*/
+
+.project-content{
+  margin-left: 35%;
+}
 
 .roles-container p{
   margin: 0.5rem 0;
@@ -294,7 +304,56 @@ img {
   font-style: italic;
 }
 
+.left-nav {
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  max-width: 12em;
+}
 
+.left-nav a{
+  display: block;
+  text-decoration: none;
+  color: #888888;
+  margin: 0.6em 0;
+}
+
+.left-nav a:visited{
+  color: #888888;
+}
+
+.left-nav a:hover{
+  color: #222;
+}
+
+#left-nav-head{
+  margin-bottom:1rem;
+}
+
+#left-nav-foot{
+  margin-top:3rem;
+}
+
+.round-apoc-right-caption{
+  margin-left: 20%;
+}
+
+.round-apoc-icon{
+  max-width: 80%;
+}
+.round-apoc-icon-container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-nav a.left-nav-project{
+  color: #222222;
+}
+
+.round-apoc-visual-caption{
+  text-align: center;
+}
 
 
 /* Style guide page */
