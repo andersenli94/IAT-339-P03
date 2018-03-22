@@ -376,3 +376,8 @@ img {
 .project-name a:hover{
   color: white;
 }
+
+#style-guide-left-nav{
+  position: relative;
+  background-color: white;
+}

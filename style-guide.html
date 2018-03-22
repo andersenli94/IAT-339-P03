@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
   <link rel="stylesheet" href="css/header.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -15,15 +15,7 @@
 
 <body>
 	<!-- Header -->
-	<section class="section-header max-width-700">
-    <div class="container">
-  		<div class = "block index-nav">
-        <nav>
-          <a href = "index.html">A [icon]</a>
-        </nav>
-      </div>
-  	</div>
-	</section>
+
 
 	<!-- Main content	-->
 
@@ -36,7 +28,7 @@
           <code>&lt;h1 id=&quot;index-andersen&quot;&gt;Andersen Li&lt;/h1&gt;</code>
         </div>
 
-        <p id="index-title">web and user experience designer</p>
+
 
       <h1>HEADER 1: Section Titles</h1>
         <div class="css-selector-code">
@@ -53,10 +45,42 @@
           <p><strong>CSS Selector:</strong> h1</p>
           <code>&lt;h2&gt;HEADER 3: Subtitles&lt;/h2&gt;</code>
         </div>
+
+        <p>Paragraph text</p>
+
+        <div class="css-selector-code">
+          <p><strong>CSS Selector:</strong> p</p>
+          <code>&lt;p&gt;Paragraph text&lt;/p&gt;</code>
+        </div>
     </section>
 
     <section>
-      <h3>Grid Layout</h3>
+        <h2>Navigation</h2>
+
+        <section>
+          <nav class="left-nav" id="style-guide-left-nav">
+              <a href="" id="left-nav-head">Andersen Li</a>
+              <a href="" class="left-nav-project">Round Apocalypse</a>
+              <a href="" class="left-nav-project">Conextus</a>
+              <a href="" id="left-nav-foot">Contact</a>
+              <a href="">CV</a>
+          </nav>
+
+          <div class="css-selector-code">
+            <p><strong>CSS Selector:</strong> nav, .left-nav, .left-nav-head, .left-nav-project, .left-nav-foot</p>
+            <code>&lt;nav class=&quot;left-nav&quot;&gt;
+                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-head&quot;&gt;Andersen Li&lt;/a&gt;
+                <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Round Apocalypse&lt;/a&gt;
+                <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Conextus&lt;/a&gt;
+                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-foot&quot;&gt;Contact&lt;/a&gt;
+                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-foot&quot;&gt;CV&lt;/a&gt;
+                <br>&lt;/nav&gt;</code>
+          </div>
+        </section>
+    </section>
+
+    <section>
+      <h2>Grid Layout</h2>
       <div class="container">
         <div class="block">
         </div>
@@ -80,34 +104,31 @@
     </section>
 
     <section class="max-width-700">
-      <h2>Images</h2>
+      <h2>Project thumbnails</h2>
         <div class="container portfolio-container">
-          <div class="block project-block width-50">
-            <figure>
-              <img src="img/conextus_thumbnail.jpg" alt="" />
-            </figure>
-          </div>
-
-          <div class="block project-block width-50">
-            <figure>
-              <img src="img/381icon.png" alt="" />
+          <div class="project-block width-50">
+            <figure class="project-thumbnail">
+              <img src="img/conextus_thumbnail.jpg" alt=""/>
             </figure>
           </div>
 
           <div class="css-selector-code">
-            <p><strong>CSS Selector:</strong> img</p>
-            <code>&lt;src="img/conextus_thumbnail.jpg"/&gt;</code>
+            <p><strong>CSS Selector:</strong> .project-thumbnail</p>
+            <code>&lt;figure class=&quot;project-thumbnail&quot;&gt;
+                <br>&lt;src="img/conextus_thumbnail.jpg"/&gt;
+                <br>&lt;/figure&gt;</code>
           </div>
         </div>
-
+      <h2>Buttons</h2>
         <div class="container">
-          <div class="block width-50">
-            <nav><a class="project-name">Project Link button</a></nav>
+
+          <div class="block project-nav-button">
+            <a href="conextus.html" class="project-name">View Project</a>
           </div>
 
-          <div class="block width-50">
+          <div class="block-3 width-50">
             <div class="css-selector-code">
-              <p class="margin-top-none"><strong>CSS Selector:</strong>a, .project-name</p>
+              <p class="margin-top-none"><strong>CSS Selector:</strong>a, .project-nav-button</p>
               <code>&lt;nav&gt;&lt;a href=&quot;&nbsp;&quot;&gt;Project Link button&lt;/a&gt;&lt;/nav&gt;</code>
             </div>
           </div>
