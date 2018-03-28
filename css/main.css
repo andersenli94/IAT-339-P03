@@ -327,11 +327,54 @@ img {
 }
 
 #left-nav-head{
-  margin-bottom:1rem;
+  margin-bottom:0rem;
 }
 
 #left-nav-foot{
   margin-top:3rem;
+}
+
+.left-nav a.left-nav-project{
+
+}
+
+.left-nav a.active{
+  color: #222222;
+  position: relative;
+}
+
+.left-nav-project-highlight{
+  z-index: -1;
+  position: absolute;
+  bottom: -0.5vh;
+  left: -1vh;
+  background: #D4AF37;
+  height: 2.5vh;
+  width: 12vh;
+  transition: width 0.7s;
+}
+
+.left-nav a.active:hover > .left-nav-project-highlight{
+  width: 1vh;
+}
+
+/* reference https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon */
+
+.hamburger-menu{
+  position: fixed;
+  top: 5vh;
+  right: 7vh;
+  padding: 0.6rem;
+  border: 2px solid #D4AF37;
+  border-radius: 50%;
+  background-color: #eee;
+  visibility: hidden;
+}
+.hamburger-menu .menu-line {
+    width: 25px;
+    height: 2px;
+    background-color: #D4AF37;
+    margin: 5px 0;
 }
 
 .round-apoc-right-caption{
@@ -347,12 +390,13 @@ img {
   margin-right: auto;
 }
 
-.left-nav a.left-nav-project{
-  color: #222222;
-}
-
 .round-apoc-visual-caption{
   text-align: center;
+}
+
+.project-h1{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #888;
 }
 
 
@@ -380,4 +424,26 @@ img {
 #style-guide-left-nav{
   position: relative;
   background-color: white;
+}
+
+
+/* @media */
+
+@media screen and (max-width: 1000px){
+  .project-content{
+    margin-left: 5%;
+
+  }
+
+  .project-content .block{
+    max-width: 95%!important;
+  }
+
+  nav.left-nav{
+    visibility: hidden;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
+  }
 }
