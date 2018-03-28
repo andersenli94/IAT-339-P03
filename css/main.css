@@ -361,9 +361,10 @@ img {
 /* reference https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon */
 
 .hamburger-menu{
+  z-index: 10;
   position: fixed;
   top: 5vh;
-  right: 7vh;
+  right: 5vh;
   padding: 0.6rem;
   border: 2px solid #D4AF37;
   border-radius: 50%;
