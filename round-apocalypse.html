@@ -18,11 +18,24 @@
 
 
   <!-- Side nav -->
-  <div class="hamburger-menu">
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
+  <div class="overlay">
+    <nav class="overlay-nav">
+        <a href="index.html" id="overlay-nav-head">Andersen Li</a>
+        <a href="round-apocalypse.html" class="overlay-nav-project active"><span class="overlay-nav-project-highlight"></span>Round Apocalypse</a>
+        <a href="conextus.html" class="overlay-nav-project">Conextus</a>
+        <a href="#footer" id="overlay-nav-foot">Contact</a>
+        <a href="">CV</a>
+    </nav>
   </div>
+
+  <a href="javascript:void(0)" class="hamburger-menu-container" aria-hidden="true"  id="menu-toggle" aria-controls="main-nav-items">
+      <div class="hamburger-menu">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+      </div>
+  </a>
+
   <section>
     <nav class="left-nav">
         <a href="index.html" id="left-nav-head">Andersen Li</a>
@@ -31,7 +44,6 @@
         <a href="#footer" id="left-nav-foot">Contact</a>
         <a href="">CV</a>
     </nav>
-
   </section>
 
 	<!-- Main content	-->
@@ -47,7 +59,7 @@
           <h2>Overview</h2>
 							<p>Round Apocalypse is a top down scrolling shooter game created using Android Studio. The player travels in space in search for a habital
 								planet while being hunted by their predators. The game utilizes the device's sensors for interactive gameplay
-								keeps high scores using a SQLite database. I created the interface for Round Apocalypse and coded the functionality of the program.</p>
+								keeps high scores using a SQLite database. In a team of two, I created the interface for Round Apocalypse and coded the functionality of the program.</p>
 
           <div class="roles-container">
             <p><strong>Role:</strong> Mobile app developer, UX/UI Designer, documentation</p>
@@ -140,5 +152,5 @@
 
   </section>
 </body>
-
+<script src="js/header-hamburger.js"></script>
 </html>

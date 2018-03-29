@@ -21,7 +21,7 @@ h1 {
   font-family: Arboria, Helvetica, sans-serif;
   color: #242424;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
   letter-spacing: 0.05em;
   margin-top: 3rem;
@@ -32,9 +32,9 @@ h1 {
 
 h2{
   font-family: Arboria, Helvetica, serif;
-  color: #3b3b3b;
-  font-weight: bold;
-  font-size: 1.5rem;
+  color: #222222;
+  font-weight: bolder;
+  font-size: 1.3rem;
   text-align: left;
   letter-spacing: 0.05em;
   margin-top: 2rem;
@@ -60,7 +60,7 @@ button{
 p{
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.02rem;
@@ -94,7 +94,7 @@ img {
 /* index page */
 
 .landing-container{
-  height: 95vh;
+  height: 100vh;
   background-color: #222222;
   position: relative;
 }
@@ -311,6 +311,25 @@ img {
   max-width: 12em;
 }
 
+.overlay-nav{
+  position: relative;
+  top: 30%;
+  width: 100%;
+}
+
+.overlay-nav a{
+  display: block;
+  text-decoration: none;
+  color: #555555;
+  margin: 0.6em 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.overlay-nav a:visited{
+  color: #555555;
+}
+
 .left-nav a{
   display: block;
   text-decoration: none;
@@ -322,15 +341,15 @@ img {
   color: #888888;
 }
 
-.left-nav a:hover{
+.left-nav a:hover, .overlay-nav a:hover{
   color: #222;
 }
 
-#left-nav-head{
+#left-nav-head, #overlay-nav-head{
   margin-bottom:0rem;
 }
 
-#left-nav-foot{
+#left-nav-foot, #overlay-nav-foot{
   margin-top:3rem;
 }
 
@@ -338,7 +357,7 @@ img {
 
 }
 
-.left-nav a.active{
+.left-nav a.active, .overlay-nav a.active{
   color: #222222;
   position: relative;
 }
@@ -354,8 +373,27 @@ img {
   transition: width 0.7s;
 }
 
-.left-nav a.active:hover > .left-nav-project-highlight{
+.overlay-nav-project-highlight{
+  z-index: -1;
+  position: absolute;
+  bottom: -0.5vh;
+  left: 40%;
+  background: #D4AF37;
+  height: 2.5vh;
+  width: 20%;
+  transition: width 0.7s;
+}
+
+.left-nav a.active:hover > .left-nav-project-highlight, .overlay-nav a.active:hover > .overlay-nav-project-highlight{
   width: 1vh;
+}
+
+#project-2-title{
+  order: 1;
+}
+
+#project-2-thumbnail{
+  order: 2;
 }
 
 /* reference https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon */
@@ -376,6 +414,18 @@ img {
     height: 2px;
     background-color: #D4AF37;
     margin: 5px 0;
+}
+
+.overlay{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(220, 220, 220, 0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
 .round-apoc-right-caption{
@@ -446,5 +496,33 @@ img {
 
   .hamburger-menu {
     visibility: visible;
+  }
+
+  .portfolio-container div, .profile-container div{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px){
+
+  .block-3{
+    flex: 1 1 auto;
+  }
+
+  .project-line-container{
+    visibility:hidden;
+    display: none;
+  }
+
+  #project-1-title{
+    margin-left: 0rem;
+  }
+
+  #project-2-title{
+    order: 2;
+  }
+
+  #project-2-thumbnail{
+    order: 1;
   }
 }
