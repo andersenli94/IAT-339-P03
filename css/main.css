@@ -477,6 +477,11 @@ img {
   background-color: white;
 }
 
+/* reference page */
+
+#reference-container{
+  padding-left: 5rem;
+}
 
 /* @media */
 
@@ -524,5 +529,10 @@ img {
 
   #project-2-thumbnail{
     order: 1;
+  }
+
+  #reference-container{
+    padding-left: 1rem;
+    max-width: 100%;
   }
 }
