@@ -503,8 +503,14 @@ img {
     visibility: visible;
   }
 
-  .portfolio-container div, .profile-container div{
+  .portfolio-container div{
     width: 95%;
+  }
+
+  .profile-container div{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
