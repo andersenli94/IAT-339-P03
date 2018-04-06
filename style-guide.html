@@ -58,47 +58,85 @@
         <h2>Navigation</h2>
 
         <section>
-          <nav class="left-nav" id="style-guide-left-nav">
-              <a href="" id="left-nav-head">Andersen Li</a>
-              <a href="" class="left-nav-project">Round Apocalypse</a>
-              <a href="" class="left-nav-project">Conextus</a>
-              <a href="" id="left-nav-foot">Contact</a>
-              <a href="">CV</a>
-          </nav>
+          <div class="container">
+            <div class="block">
+              <nav class="left-nav" id="style-guide-left-nav">
+                  <a href="" id="left-nav-head">Andersen Li</a>
+                  <a href="" class="left-nav-project">Round Apocalypse</a>
+                  <a href="" class="left-nav-project">Conextus</a>
+              </nav>
 
-          <div class="css-selector-code">
-            <p><strong>CSS Selector:</strong> nav, .left-nav, .left-nav-head, .left-nav-project, .left-nav-foot</p>
-            <code>&lt;nav class=&quot;left-nav&quot;&gt;
-                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-head&quot;&gt;Andersen Li&lt;/a&gt;
-                <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Round Apocalypse&lt;/a&gt;
-                <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Conextus&lt;/a&gt;
-                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-foot&quot;&gt;Contact&lt;/a&gt;
-                <br>&lt;a href=&quot;&quot; id=&quot;left-nav-foot&quot;&gt;CV&lt;/a&gt;
-                <br>&lt;/nav&gt;</code>
-          </div>
+              <div class="css-selector-code">
+                <p><strong>CSS Selector:</strong> nav, .left-nav, .left-nav-head, .left-nav-project, .left-nav-foot</p>
+                <code>&lt;nav class=&quot;left-nav&quot;&gt;
+                    <br>&lt;a href=&quot;&quot; id=&quot;left-nav-head&quot;&gt;Andersen Li&lt;/a&gt;
+                    <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Round Apocalypse&lt;/a&gt;
+                    <br>&lt;a href=&quot;&quot; class=&quot;left-nav-project&quot;&gt;Conextus&lt;/a&gt;
+                    <br>&lt;/nav&gt;</code>
+              </div>
+            </div>
+            <div class="block">
+                <div class="overlay">
+                  <nav class="overlay-nav">
+                      <a href="index.html" id="overlay-nav-head">Andersen Li</a>
+                      <a href="round-apocalypse.html" class="overlay-nav-project">Round Apocalypse</a>
+                      <a href="conextus.html" class="overlay-nav-project">Conextus</a>
+
+                  </nav>
+                </div>
+
+                <a href="javascript:void(0)" class="hamburger-menu-container" id="menu-toggle">
+                    <div class="hamburger-menu" id="style-guide-hamburger-menu">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </div>
+                </a>
+
+                <div class="css-selector-code">
+                  <p><strong>CSS Selector:</strong> nav, .overlay, .overlay-nav, .overlay-nav-project, .hamburger-menu-container, hamburger-menu, #menu-toggle</p>
+                  <code>&lt;div class=&quot;overlay&quot;&gt;
+                      <br>&lt;div class=&quot;overlay-nav&quot;&gt;
+                      <br>&lt;nav class=&quot;left-nav&quot;&gt;
+                      <br>&lt;a href=&quot;&quot; id=&quot;overlay-nav-head&quot;&gt;Andersen Li&lt;/a&gt;
+                      <br>&lt;a href=&quot;&quot; class=&quot;overlay-nav-project&quot;&gt;Round Apocalypse&lt;/a&gt;
+                      <br>&lt;a href=&quot;&quot; class=&quot;overlay-nav-project&quot;&gt;Conextus&lt;/a&gt;
+                      <br>&lt;/nav&gt;
+                      <br>&lt;/div&gt;
+                      <br>&lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
         </section>
     </section>
 
     <section>
       <h2>Grid Layout</h2>
       <div class="container">
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 1</p>
         </div>
       </div>
 
       <div class="container">
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 2</p>
         </div>
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 2</p>
         </div>
       </div>
 
       <div class="container">
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 3</p>
         </div>
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 3</p>
         </div>
-        <div class="block">
+        <div class="block grid-box">
+          <p>Column 3</p>
         </div>
       </div>
     </section>
@@ -167,7 +205,7 @@
         </div>
     </div>
   </section>
-
+</section>
 	<!-- Footer -->
 
   <section class="footer-container" id="footer">
@@ -182,7 +220,7 @@
       </div>
     </div>
   </section>
-
+<script src="js/header-hamburger.js"></script>
 </body>
 
 </html>

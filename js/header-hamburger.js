@@ -10,9 +10,9 @@ var overlay = document.querySelector(".overlay");
 
 var menuOpen = false;
 
-var collapseWidth = 1000;
+var collapseWidth = 1;
 
-if (windowWidth < collapseWidth){
+if (windowWidth > collapseWidth){
 	console.log("windowWidth < " + collapseWidth + "; collapsing menu");
 
 	hamburgerMenu.addEventListener("click",
@@ -31,23 +31,4 @@ if (windowWidth < collapseWidth){
 			}
 
 		})
-
-  // sideNavCloseButton.addEventListener("click",
-  //   function () {
-  //     if(navItems.classList.contains("hidden")){
-  //       console.log("#nav-items hidden, now showing.");
-  //       navItems.classList.remove("hidden");
-  //       navItems.setAttribute("aria-hidden", "false");
-	//
-  //     }
-  //     else{
-  //       console.log("#nav-items showing, now hiding.");
-  //       navItems.classList.add("hidden");
-  //       navItems.setAttribute("aria-hidden", "true");
-  //       sideNavCloseButton.classList.add("hidden");
-  //       sideNavCloseButton.setAttribute("aria-hidden", "true");
-  //       sideNav.style.display = "none";
-  //     }
-  //   });
-
 }

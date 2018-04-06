@@ -84,7 +84,6 @@ code{
 img {
   max-width: 40rem;
   height: auto;
-  border: 2px solid #ccc1a3;
 }
 
 .img-responsive{
@@ -97,6 +96,14 @@ img {
   height: 100vh;
   background-color: #222222;
   position: relative;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.landing-container img{
+
 }
 
 
@@ -136,10 +143,32 @@ img {
   height: 15vh;
 }
 
+.diagonal-line{
+
+}
+
+#right-diagonal-line{
+  position: absolute;
+  bottom: -40px;
+  left: 49%;
+  border-left: 3px solid white;
+  height: 80px;
+  transform: rotate(45deg);
+}
+
+#left-diagonal-line{
+  position: absolute;
+  bottom: -40px;
+  left: 49%;
+  border-left: 3px solid white;
+  height: 80px;
+  transform: rotate(-45deg);
+}
+
 .horizontal-line{
   height: 1px;
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   border-top: 2px solid #222222;
   width: 5rem;
   margin-left: 1rem;
@@ -148,10 +177,10 @@ img {
 #scroll-indicator-line{
   position: absolute;
   bottom: 0vh;
-  left: 49.5%;
+  left: 42.5%;
   background: #D4AF37;
-  height: 13vh;
-  width: 3.5vh;
+  height: 45px;
+  width: 15%;
 }
 
 #scroll-indicator-text{
@@ -191,10 +220,12 @@ img {
 
 .portfolio-container img{
   display: block;
-  max-width: 200px;
+  max-width: 175px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -252,8 +283,6 @@ img {
   height: 12rem;
 
 }
-
-
 
 
 .profile-container{
@@ -398,6 +427,10 @@ img {
 
 /* reference https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon */
 
+#index-hamburger-menu{
+    visibility: visible!important;
+}
+
 .hamburger-menu{
   z-index: 10;
   position: fixed;
@@ -406,13 +439,13 @@ img {
   padding: 0.6rem;
   border: 2px solid #D4AF37;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: #D4AF37;
   visibility: hidden;
 }
 .hamburger-menu .menu-line {
     width: 25px;
     height: 2px;
-    background-color: #D4AF37;
+    background-color: #eee;
     margin: 5px 0;
 }
 
@@ -457,10 +490,13 @@ img {
     background-color: #fff;
     margin-top: 0.5rem;
     padding: 0.3rem 0;
+    margin-left: 0.5rem;
 
 }
-.css-selector-code p {
+.css-selector-code p, .css-selector-code code {
   letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .project-name:hover{
@@ -475,6 +511,28 @@ img {
 #style-guide-left-nav{
   position: relative;
   background-color: white;
+  top: 0;
+  left: 25%;
+}
+
+#style-guide-hamburger-menu{
+  position: relative;
+  visibility: visible!important;
+  left: 40%;
+  top: 0;
+  width: 50px;
+  margin-bottom: 3rem;
+}
+
+.grid-box{
+  background-color: #D4AF37;
+  width: 100%;
+  margin-left: 1rem;
+
+}
+
+.grid-box p{
+  text-align: center;
 }
 
 /* reference page */

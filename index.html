@@ -25,6 +25,25 @@
   	</div>
 	</section> -->
 
+  <!-- Side nav -->
+  <div class="overlay">
+    <nav class="overlay-nav">
+        <a href="index.html" id="overlay-nav-head" class="active">Andersen Li</a>
+        <a href="round-apocalypse.html" class="overlay-nav-project">Round Apocalypse</a>
+        <a href="conextus.html" class="overlay-nav-project">Conextus</a>
+        <a href="#footer" id="overlay-nav-foot">Contact</a>
+        <a href="">CV</a>
+    </nav>
+  </div>
+
+  <a href="javascript:void(0)" class="hamburger-menu-container" id="menu-toggle">
+      <div class="hamburger-menu" id="index-hamburger-menu">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+      </div>
+  </a>
+
 	<!-- Main content	-->
 
   <section class="landing-container">
@@ -32,9 +51,10 @@
       <h1 id="index-andersen">ANDERSEN LI</h1>
       <p id="index-title">web and front end developer</p>
     </div>
-    <span id="scroll-indicator-line"></span>
-    <span class="vertical-line"></span>
-    <p id="scroll-indicator-text">scroll</p>
+    <span id="scroll-indicator-line">
+    <span class="diagonal-line" id="left-diagonal-line"></span>
+    <span class="diagonal-line" id="right-diagonal-line"></span>
+    </span>
   </section>
 
   <section class="portfolio-container width-100">
@@ -44,7 +64,7 @@
       <div class="container max-width-700 project-container">
         <div class="block-3 project-block">
           <figure class="project-thumbnail">
-            <img src="img/381icon.png" alt=""/>
+            <img src="img/381icon.png" alt="" class="img-responsive" id="round-apoc-img"/>
           </figure>
         </div>
         <div class="block-2 project-descrpt-container" id="project-1-title">
@@ -123,6 +143,7 @@
     </div>
   </section>
 
+  <script src="js/header-hamburger.js"></script>
 </body>
 
 </html>
