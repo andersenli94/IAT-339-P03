@@ -44,7 +44,7 @@ h2{
 h3{
   font-family: Arboria, Helvetica, serif;
   color: #3b3b3b;
-  font-weight: medium;
+  font-weight: bold;
   font-size: 1.4rem;
   text-align: left;
   letter-spacing: 0.1em;
@@ -445,7 +445,7 @@ img {
 .hamburger-menu .menu-line {
     width: 25px;
     height: 2px;
-    background-color: #eee;
+    background-color: #eeeeee;
     margin: 5px 0;
 }
 

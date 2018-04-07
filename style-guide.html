@@ -29,11 +29,15 @@
         </div>
 
 
-
-      <h1>HEADER 1: Section Titles</h1>
+      <h1 id="profile-h1">HEADER 1: Home Page Titles</h1>
+          <div class="css-selector-code">
+            <p><strong>CSS Selector:</strong> h1, #profile-h1, #project-h1</p>
+            <code>&lt;h1 id=&quot;profile-h1&quot;&gt;HEADER 1: Section Titles&lt;/h1&gt;</code>
+          </div>
+      <h1 class="project-h1">HEADER 1: Project Titles</h1>
         <div class="css-selector-code">
           <p><strong>CSS Selector:</strong> h1</p>
-          <code>&lt;h1&gt;HEADER 1: Section Titles&lt;/h1&gt;</code>
+          <code>&lt;h1 class=&quot;project-h1&quot;&gt;HEADER 1: Section Titles&lt;/h1&gt;</code>
         </div>
       <h2>HEADER 2: Subheaders</h2>
         <div class="css-selector-code">
@@ -141,15 +145,15 @@
       </div>
     </section>
 
-    <section class="max-width-700">
+    <section class="max-width-700 portfolio-container">
       <h2>Project thumbnails</h2>
-        <div class="container portfolio-container">
-          <div class="project-block width-50">
-            <figure class="project-thumbnail">
-              <img src="img/conextus_thumbnail.jpg" alt=""/>
-            </figure>
-          </div>
-
+      <div class="container max-width-700 project-container">
+        <div class="block-3 project-block" id="project-1-thumbnail">
+          <figure class="project-thumbnail">
+            <img src="img/conextus_thumbnail.jpg" alt=""/>
+          </figure>
+        </div>
+        <div class="block-2 project-descrpt-container" id="project-1-title">
           <div class="css-selector-code">
             <p><strong>CSS Selector:</strong> .project-thumbnail</p>
             <code>&lt;figure class=&quot;project-thumbnail&quot;&gt;
@@ -157,6 +161,10 @@
                 <br>&lt;/figure&gt;</code>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="max-width-700">
       <h2>Buttons</h2>
         <div class="container">
 
@@ -172,40 +180,8 @@
           </div>
         </div>
 
+    </section>
   </section>
-
-  <section class="max-width-700">
-      <h2>Icons</h2>
-      <div class="container">
-
-        <div class="block">
-          <p></p>
-
-          <div class="profile-icons">
-              <div class="circle">
-                <a href="mailto:ala111@sfu.ca">email</a>
-              </div>
-              <div class="circle">
-                <a href="">CV</a>
-              </div>
-              <div class="circle">
-                <a href="">Git</a>
-              </div>
-              <div class="circle">
-                <a href="">in</a>
-              </div>
-          </div>
-
-          <div class="css-selector-code">
-            <p class="margin-top-none"><strong>CSS Selector:</strong>div, .circle</p>
-            <code>&lt;div class&quot;circle&quot;&gt;
-              <br>&lt;a href=&quot;mailto:ala111@sfu.ca &quot;&gt;Mail&lt;/a&gt;
-              <br>&lt;/a&gt;</code>
-          </div>
-        </div>
-    </div>
-  </section>
-</section>
 	<!-- Footer -->
 
   <section class="footer-container" id="footer">
